@@ -43,7 +43,9 @@ object Question {
   def getName(input: String, splitString: String): String = input.split(splitString)(1).trim.replace(" ", "_").replace("?", "")
 
   def sparqlQuery(resource: String, queryType: String): String =
-    URLEncoder.encode( s"""PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+    URLEncoder.encode(
+      s"""
+      |PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
       |PREFIX dbpprop: <http://dbpedia.org/property/>
       |PREFIX dbres: <http://dbpedia.org/resource/>
       |

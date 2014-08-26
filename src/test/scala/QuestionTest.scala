@@ -1,7 +1,7 @@
 import net.ikenna.Question
 import org.scalatest.FunSuite
 
-class Test extends FunSuite {
+class QuestionTest extends FunSuite {
 
   test("How old is Tony Blair") {
     val answer = Question.ask("How old is Tony Blair?")
